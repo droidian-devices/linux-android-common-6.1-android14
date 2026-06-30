@@ -39,3 +39,6 @@ endif
 	cp -v $(KERNEL_OUT)/boot-lz4.img $(CURDIR)/debian/linux-bootimage-$(KERNEL_RELEASE)-lz4/boot/boot.img-$(KERNEL_RELEASE)
 	cp -v $(KERNEL_OUT)/boot-recovery-gz.img $(CURDIR)/debian/linux-bootimage-$(KERNEL_RELEASE)-gzip/boot/recovery.img-$(KERNEL_RELEASE)
 	cp -v $(KERNEL_OUT)/boot-recovery-lz4.img $(CURDIR)/debian/linux-bootimage-$(KERNEL_RELEASE)-lz4/boot/recovery.img-$(KERNEL_RELEASE)
+
+debian/data/initramfs/droidian-initramfs.cpio:
+	lz -c -d /usr/lib/$(DEB_HOST_MULTIARCH)/halium-generic-initramfs/initrd.img-halium-generic.lz4 >$@

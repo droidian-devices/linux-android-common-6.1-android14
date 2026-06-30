@@ -103,7 +103,7 @@ KERNEL_BOOTIMAGE_VERSION = 4
 # Kernel initramfs compression. Defaults to gzip.
 # All non-gki devices need a gzip (gz) initramfs
 # For devices launched with a GKI kernel it can be either gzip (gz) or lz4 (lz4)
-KERNEL_INITRAMFS_COMPRESSION = gz
+KERNEL_INITRAMFS_COMPRESSION = lz4
 
 ########################################################################
 # Android verified boot
