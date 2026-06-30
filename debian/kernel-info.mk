@@ -8,7 +8,7 @@
 VARIANT = android
 
 # Kernel base version
-KERNEL_BASE_VERSION = $(VERSION).$(PATCHLEVEL).$(SUBLEVEL)-android12-9
+KERNEL_BASE_VERSION = $(VERSION).$(PATCHLEVEL).$(SUBLEVEL)-android14
 
 # The kernel cmdline to use
 KERNEL_BOOTIMAGE_CMDLINE = 
@@ -18,7 +18,7 @@ KERNEL_BOOTIMAGE_CMDLINE =
 DEVICE_VENDOR = common
 
 # Slug for the device model. Like above.
-DEVICE_MODEL = 5.10-android12
+DEVICE_MODEL = 6.1-android14
 
 # Slug for the device platform. If unsure, keep this commented.
 #DEVICE_PLATFORM =
@@ -84,10 +84,10 @@ KERNEL_BOOTIMAGE_SECONDIMAGE_OFFSET =
 KERNEL_BOOTIMAGE_TAGS_OFFSET = 
 
 # Specify boot image security patch level if needed
-KERNEL_BOOTIMAGE_PATCH_LEVEL = 2023-08
+KERNEL_BOOTIMAGE_PATCH_LEVEL = 2025-04
 
 # Specify boot image OS version if needed
-KERNEL_BOOTIMAGE_OS_VERSION = 12.0.0
+KERNEL_BOOTIMAGE_OS_VERSION = 14
 
 # Required for header version 2, ignore otherwise
 KERNEL_BOOTIMAGE_DTB_OFFSET = 
@@ -103,7 +103,7 @@ KERNEL_BOOTIMAGE_VERSION = 4
 # Kernel initramfs compression. Defaults to gzip.
 # All non-gki devices need a gzip (gz) initramfs
 # For devices launched with a GKI kernel it can be either gzip (gz) or lz4 (lz4)
-KERNEL_INITRAMFS_COMPRESSION = lz4
+KERNEL_INITRAMFS_COMPRESSION = gz
 
 ########################################################################
 # Android verified boot
@@ -187,7 +187,7 @@ BUILD_LLVM = 1
 BUILD_SKIP_MODULES = 0
 
 # Set clang version
-CLANG_VERSION = 12.0-r416183b
+CLANG_VERSION = 17.0-r487747c
 # Set to 1 to use a manually installed toolchain
 # Remember to update the path in BUILD_PATH
 CLANG_CUSTOM = 0

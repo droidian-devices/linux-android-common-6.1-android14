@@ -2,8 +2,8 @@
 # android common kernel sources. See ../update_submodule.sh
 
 # SPDX-License-Identifier: GPL-2.0
-VERSION = 5
-PATCHLEVEL = 10
-SUBLEVEL = 230
+VERSION = 6
+PATCHLEVEL = 1
+SUBLEVEL = 174
 EXTRAVERSION =
-NAME = Dare mighty things
+NAME = Curry Ramen
