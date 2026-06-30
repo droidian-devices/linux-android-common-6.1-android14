@@ -23,7 +23,7 @@ Build-Depends: build-essential,
                mkdtboimg,
                avbtool,
                lz4,
-               clang-android-17.0-r487747c, linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, gcc-4.9-aarch64-linux-android, g++-4.9-aarch64-linux-android, libgcc-4.9-dev-aarch64-linux-android-cross
+               clang-android-17.0-r487747c, linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, gcc-4.9-aarch64-linux-android, g++-4.9-aarch64-linux-android, libgcc-4.9-dev-aarch64-linux-android-cross, libelf-dev
 Standards-Version: 4.5.0.3
 Vcs-Browser: https://github.com/droidian-devices/linux-android-common-6.1-android14
 Vcs-Git: https://github.com/droidian-devices/linux-android-common-6.1-android14.git
